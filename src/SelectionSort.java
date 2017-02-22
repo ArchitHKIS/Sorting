@@ -18,10 +18,14 @@ public class SelectionSort {
 			System.out.print(a[i] + " ");
 		}
 	}
-	public static void Insertion(int[] a){
+	public static void Insertion1(int[] a){
 		int[] temp = new int[a.length];
 		for(int i = 0; i < temp.length; i++){
-			
+			for(int c = 0; c < temp.length -1; c++){
+				if(a[c] > a[i]){
+					c = i;
+				}
+			}
 		}
 	}
 }
