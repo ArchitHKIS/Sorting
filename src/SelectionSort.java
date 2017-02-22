@@ -20,12 +20,13 @@ public class SelectionSort {
 	}
 	public static void Insertion1(int[] a){
 		int[] temp = new int[a.length];
-		for(int i = 0; i < temp.length; i++){
-			for(int c = 0; c < temp.length -1; c++){
+		for(int i = 1; i < temp.length; i++){
+			for(int c = i-1; c < temp.length -1; c++){
 				if(a[c] > a[i]){
 					c = i;
 				}
 			}
+			//I DONT KNOW WHAT IM DOING
 		}
 	}
 }
